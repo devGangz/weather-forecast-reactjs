@@ -36,3 +36,51 @@
     transform: rotate(360deg);
   }
 }
+
+@media (min-width: 1024px){
+  .largeMonitorHome{
+    display: block;
+  }
+
+  .mobileMonitorHome{
+    display: none;
+  }
+
+  .coverImage{
+    background-size: cover;
+    height: 100vh
+  }
+
+  .coverImage-sub{
+    height: 70%;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+}
+
+
+@media (max-width: 414px){
+  .largeMonitorHome{
+    display: none;
+  }
+
+  .mobileMonitorHome{
+    display: block;
+  }
+
+  .coverImage{
+    margin-top: -2rem;
+    background-size: cover;
+    height: 130vh;
+    position: absolute;
+    z-index: -10;
+  }
+  .coverImage-sub{
+    margin-bottom: 1rem;
+    padding-bottom: 3rem;
+    margin-top: 8rem;
+    padding-top: -1rem;
+  }
+}
+
+
